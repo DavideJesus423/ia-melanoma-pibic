@@ -1,52 +1,28 @@
-# \# 🧠 IA para Detecção de Melanoma (PIBIC 2025/2026)
+# 🧠 IA para Detecção de Melanoma (PIBIC 2025/2026)
 
-# 
+Repositório oficial do projeto de Iniciação Científica para desenvolvimento de uma Rede Neural Convolucional (CNN) capaz de auxiliar no diagnóstico de lesões de pele.
 
-# Repositório responsável pelo desenvolvimento, treinamento e validação da Rede Neural Convolucional (CNN) para classificação de lesões de pele.
+## 🎯 Objetivo
+Desenvolver um modelo de Inteligência Artificial para classificar **Melanoma** e outras 7 lesões cutâneas utilizando o dataset **ISIC 2019**, visando alta precisão para futura integração em sistemas de triagem médica.
 
-# 
+## 🛠️ Tecnologias Utilizadas
+- **Linguagem:** Python 3.10+
+- **Framework:** TensorFlow / Keras
+- **Arquitetura:** Transfer Learning (MobileNetV2)
+- **Ambiente de Treino:** Google Colab (GPU T4)
 
-# \## 🎯 Objetivo
+## 📊 Resultados (Versão Atual: V3)
+A versão mais recente implementou a técnica de *Transfer Learning* com a rede **MobileNetV2**, superando as limitações das arquiteturas anteriores.
 
-# Treinar um modelo capaz de distinguir \*\*Melanoma\*\* de outras 7 lesões cutâneas utilizando o dataset \*\*ISIC 2019\*\*.
+- **Acurácia de Treino:** ~70%
+- **Acurácia de Validação:** ~68%
+- **Status:** Modelo estável e pronto para integração com Back-end.
+- **Evolução:** Aumento de precisão significativo em relação à versão V2 (que estagnou em 60%), demonstrando maior capacidade de generalização.
 
-# 
+## 📂 Estrutura do Projeto
+- `/notebooks`: Histórico de experimentos, pré-processamento e treinamento.
+- `/models`: Arquivos `.keras` dos modelos treinados e otimizados.
+- `/dataset`: Scripts de organização e limpeza do ISIC 2019.
 
-# \## 🛠️ Tecnologias
-
-# \- \*\*Linguagem:\*\* Python 3.10+
-
-# \- \*\*Framework:\*\* TensorFlow / Keras
-
-# \- \*\*Ambiente:\*\* Google Colab (GPU T4)
-
-# 
-
-# \## 📊 Resultados Atuais (V2)
-
-# \- \*\*Acurácia de Treino:\*\* ~60%
-
-# \- \*\*Acurácia de Validação:\*\* ~62%
-
-# \- \*\*Status:\*\* Overfitting eliminado com sucesso usando Data Augmentation e Dropout.
-
-# 
-
-# \## 📂 Estrutura
-
-# \- `/notebooks`: Contém os Jupyter Notebooks com o histórico de experimentos.
-
-# \- `/models`: Contém o arquivo `.keras` final pronto para inferência.
-
-# 
-
-# \## 🚀 Como usar o modelo
-
-# ```python
-
-# import tensorflow as tf
-
-# model = tf.keras.models.load\_model('models/modelo\_treinado\_v2.keras')
-
-# \# model.predict(imagem)
-
+---
+*Projeto desenvolvido como parte do Programa Institucional de Bolsas de Iniciação Científica (PIBIC).*
